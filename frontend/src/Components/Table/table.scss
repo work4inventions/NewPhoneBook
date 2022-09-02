@@ -1,0 +1,36 @@
+.table {
+    .cellWrapper {
+      display: flex;
+      align-items: center;
+  
+      .image {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+    }
+
+    .empty{
+      position: relative;
+      color:'#ccc';
+      text-align: center;
+    }
+    button{
+      padding:10px 20px;
+      border-radius: 10px;
+      border-width: 0;
+      color:#fff ; 
+      margin-left: 10px;
+      cursor: pointer;
+      &.edit{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.20);
+      }
+      &.delete{
+        color: rgb(218, 54, 32);
+        background-color: rgba(218, 54, 32, 0.20);
+      }
+    }
+  }
