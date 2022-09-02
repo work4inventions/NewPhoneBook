@@ -92,7 +92,7 @@ const Regitser = () => {
             localStorage.setItem("token", result.token);
             localStorage.setItem("email", email);
             localStorage.setItem("password", password);
-            navigate("/home");
+            navigate("/");
           }
         });
     }
@@ -164,7 +164,7 @@ const Regitser = () => {
             </div>
             {confirmpasswordError && <span>{confirmpasswordError}</span>}
 
-            <button type="submit">{loading ? <Dots /> : "Login"}</button>
+            <button type="submit">{loading ? <Dots /> : "Submit"}</button>
             <p
               onClick={() => {
                 navigate("/login");

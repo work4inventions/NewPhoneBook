@@ -66,7 +66,7 @@ const Login = () => {
           localStorage.setItem("token", result.token);
           localStorage.setItem("email", email);
           localStorage.setItem("password", password);
-          navigate("/home")
+          navigate("/")
           // window.location.href = "User";
         }
       });
